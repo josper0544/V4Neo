@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `V4Neo`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `V4Neo-v01`,
+    siteUrl: `https://www.doEzi.com.au`
   },
   plugins: ["gatsby-plugin-styled-components",
    "gatsby-plugin-image",
@@ -12,10 +12,17 @@ module.exports = {
     {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "images",
-      "path": "./src/images/"
+      name: "images",
+      path: "./src/images/"
     },
     __key: "images"
+  },
+  {
+    resolve:'gatsby-source-filesystem',
+    options: {
+      name: "blogs",
+      path: `${__dirname}/blog`
+    },
   }
 ]
 };
